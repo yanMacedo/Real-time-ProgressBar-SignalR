@@ -11,7 +11,21 @@ connection.start().then(() => {
 }).catch(err => console.error(err.toString()));
 
 connection.on("ReceiveProgress", function (progress) {
-    document.getElementById("progressBar").style.width = progress + "%";
+    //document.getElementById("progressBar").style.width = progress + "%";
+    //var progreesBarWidth = document.getElementById("progressBar").style.width = progress + "%";
+
+    var progreesBar = document.getElementById("progressBar");
+    progreesBar.style.width = progress + "%";
+
+    if (progress == 100) {
+        progressBar.addEventListener("transitionend", function resetBar() {
+            progreesBar.style.width = "0%";
+            alert("File uploaded succesfully!");
+
+            progreesBar.removeEventListener("transitionend", resetBar);
+        }, { once: true }); //o evento só dispara uma vez  
+    }
+
 });
 
 
