@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<input type="file" id="fileInput" accept=".xlsm,.xls,.xlsx" />
+<button onclick="uploadFile()">Upload</button>
+
+<div class="progress" style="width: 100%; background-color: #ddd;height:20px; margin-top:10px;">
+    <div id="progressBar" class="progress-bar" style="width:0%; background-color: green; height: 100%;"></div>
+</div>
+
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/progress.js"></script>

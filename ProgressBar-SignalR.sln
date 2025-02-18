@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgressBar-SignalR", "ProgressBar-SignalR\ProgressBar-SignalR.csproj", "{3B37F816-660F-494E-8079-77316868095B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B37F816-660F-494E-8079-77316868095B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B37F816-660F-494E-8079-77316868095B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B37F816-660F-494E-8079-77316868095B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B37F816-660F-494E-8079-77316868095B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3A2DCBD-4960-40E4-8810-D2E26E1C0ED8}
+	EndGlobalSection
+EndGlobal
